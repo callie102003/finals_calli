@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Feedback Survey</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Product Feedback Survey</h1>
+        <form id="survey-form">
+            <div class="form-group">
+                <label for="satisfaction">How satisfied are you with the product?</label>
+                <select id="satisfaction" name="satisfaction">
+                    <option value="very-satisfied">Very Satisfied</option>
+                    <option value="satisfied">Satisfied</option>
+                    <option value="neutral">Neutral</option>
+                    <option value="dissatisfied">Dissatisfied</option>
+                    <option value="very-dissatisfied">Very Dissatisfied</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="features">What features do you find most useful?</label>
+                <textarea id="features" name="features" rows="4" cols="50"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="recommendation">How likely are you to recommend this product to others?</label>
+                <input type="range" id="recommendation" name="recommendation" min="0" max="10" step="1">
+            </div>
+
+            <!-- New Questions Related to Dogs -->
+
+            <div class="form-group">
+                <label for="dog-owner">Are you a dog owner?</label>
+                <select id="dog-owner" name="dog-owner">
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="dog-breed">What breed(s) of dog(s) do you own?</label>
+                <input type="text" id="dog-breed" name="dog-breed" placeholder="Enter breed(s) here">
+            </div>
+
+            <div class="form-group">
+                <label for="dog-training">Have you used our product for dog training purposes?</label>
+                <select id="dog-training" name="dog-training">
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="dog-friendly">How dog-friendly do you find our product?</label>
+                <input type="range" id="dog-friendly" name="dog-friendly" min="0" max="10" step="1">
+            </div>
+
+            <div class="form-group">
+                <label for="dog-satisfaction">If you have used our product for your dog(s), how satisfied are you with its performance?</label>
+                <select id="dog-satisfaction" name="dog-satisfaction">
+                    <option value="very-satisfied">Very Satisfied</option>
+                    <option value="satisfied">Satisfied</option>
+                    <option value="neutral">Neutral</option>
+                    <option value="dissatisfied">Dissatisfied</option>
+                    <option value="very-dissatisfied">Very Dissatisfied</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="dog-improvement">How do you think we can improve our product for dog owners?</label>
+                <textarea id="dog-improvement" name="dog-improvement" rows="4" cols="50"></textarea>
+            </div>
+
+            <!-- End of New Questions -->
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
